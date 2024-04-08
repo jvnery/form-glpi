@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formulário GLPI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="testbox">
+    <form action="/">
+      <div class="banner">
+        <h1>Cadastro de Projetos</h1>
+      </div>
+      <div class="item">
+        <h2>Dados do Solicitante</h2>
+        <p>Possui Cadastro no GLPI?</p>
+        <input type="text" name="cadastro"  />
+      </div>
+      <div class="item">
+        <h2>Dados do Projeto</h2>
+        <div class="item-flex">
+          <label for="nome-projeto">
+            <p>Nome do Projeto:</p>
+            <input type="text" name="nome-projeto"  />
+          </label>
+          <label for="sigla-projeto">
+            <p>Sigla do Projeto:</p>
+            <input type="text" name="sigla-projeto"  />
+          </label> 
+          <label for="tipo-projeto">
+            <p>Tipo de Projeto:</p>
+            <input type="text" name="tipo-projeto"  />
+          </label> 
+          <label for="data-inicio">
+            <p>Data de Início:</p>
+            <input type="date" name="data-inicio"  />
+          </label> 
+          <label for="data-fim">
+            <p>Data de Término:</p>
+            <input type="date" name="data-fim"  />
+          </label>
+          <label for="resumo-projeto">
+            <p>Resumo do Projeto:</p>
+            <textarea name="resumo-projeto" id="resumo-projeto" cols="30" rows="1"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Dados do Complementares do Projeto</h2>
+        <div class="item-flex">
+          <label for="patrocinador">
+            <p>Patrocinador:</p>
+            <input type="text" name="patrocinador"  />
+          </label>
+          <label for="telefone-patrocinador">
+            <p>Telefone/Ramal:</p>
+            <input type="tel" name="telefone-patrocinador"  />
+          </label> 
+          <label for="email">
+            <p> E-mail:</p>
+            <input type="email" name="email"  />
+          </label> 
+          <label for="nome-interlocutor">
+            <p>Nome do Interlocutor:</p>
+            <input type="text" name="nome-interlocutor"  />
+          </label> 
+          <label for="contato-patrocinador">
+            <p>Contato do Interlocutor do Patrocinador : </p>
+            <input type="text" name="contato-patrocinador"  />
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Recursos Computacionais</h2>
+        <div class="item-flex">
+          <label for="supercomputador">
+            <p>Supercomputador:</p>
+            <input type="text" name="supercomputador"  />
+          </label>
+          <label for="filas-acesso">
+            <p>Filas de acesso:</p>
+            <input type="text" name="filas-acesso"  />
+          </label> 
+          <label for="nos-usuario">
+            <p>Quantidade de nós por usuário CPU:</p>
+            <input type="number" name="nos-usuario"  />
+          </label> 
+          <label for="nos-grupo">
+            <p>Quantidade de nós por grupo CPU:</p>
+            <input type="number" name="nos-grupo"  />
+          </label> 
+          <label for="armazenamento">
+            <p>Quantidade de Armazenamento:</p>
+            <input type="text" name="armazenamento"  />
+          </label>
+          <label for="regras-pasta">
+            <p>Regras Padrão da Pasta do Projeto:</p>
+            <input type="text" name="regras-pasta"  />
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Informações do Pesquisador Lider/Coordenador</h2>
+        <p>Pesquisador Líder/Coordenador já possui cadastro?</p>
+        <input type="text" name="cadastro"  />
+      </div>
+      <div class="item">
+        <h2>Dados do Pesquisador Líder/Coordenador</h2>
+        <div class="item-flex">
+          <label for="nome-pesquisador">
+            <p>Nome Completo:</p>
+            <input type="text" name="nome-pesquisador"  />
+          </label>
+          <label for="documento-pesquisador">
+            <p>Documento de Identificação:</p>
+            <input type="text" name="documento-pesquisador"  />
+          </label> 
+          <label for="telefone-pesquisador">
+            <p> Telefone:</p>
+            <input type="tel" name="telefone-pesquisador"  />
+          </label> 
+          <label for="instituicao">
+            <p>Instituição:</p>
+            <input type="text" name="instituicao"  />
+          </label> 
+          <label for="instituicao-secundaria">
+            <p>Instituição Secundária:</p>
+            <input type="text" name="instituicao-secundaria"  />
+          </label> 
+          <label for="setor">
+            <p>Setor:</p>
+            <input type="text" name="setor"  />
+          </label>
+          <label for="email-pesquisador">
+            <p> E-mail:</p>
+            <input type="email" name="email-pesquisador"  />
+          </label> 
+          <label for="ip-origem">
+            <p>IP de Origem:</p>
+            <input type="text" name="ip-origem"  />
+          </label>
+          <label for="usuario">
+            <p>Nome de Usuário:</p>
+            <input type="text" name="usuario"  />
+          </label>
+        </div>
+      </div>
+      <div class="btn-block">
+        <button type="submit" href="/">Adicionar</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

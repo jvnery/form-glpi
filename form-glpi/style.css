@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body,
+div,
+form,
+input,
+select,
+textarea,
+p {
+    outline: none;
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 22px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #206bc4;
+}
+
+h2 {
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: rgba(32, 107, 196, 0.05);
+    color: #206bc4;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+    border: 1px solid rgba(98, 105, 118, 0.16);
+    border-radius: 4px;
+}
+
+.banner {
+    background-color: rgba(32, 107, 196, 0.05);
+    padding: 16px 20px;
+}
+
+.item-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+label {
+    width: 33%;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0.4375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4285714286;
+    color: inherit;
+    background-color: #fdfdfd;
+    background-clip: padding-box;
+    border: 1px solid #d9dbde;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    min-height: 36px;
+}
+
+.item input:focus,
+.item select:focus,
+.item textarea:focus {
+    color: inherit;
+    background-color: #fdfdfd;
+    border-color: #ffe4ae;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(254, 201, 92, 0.25);
+}
+
+.item {
+    position: relative;
+    margin: 10px;
+}
+
+.btn-block {
+    padding: 20px;
+    text-align: end;
+}
+
+button {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #fec95c;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #e5b553;
+}
